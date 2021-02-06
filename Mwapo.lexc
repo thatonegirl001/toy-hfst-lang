@@ -1,0 +1,85 @@
+Multichar_Symbols
++N +Liv +Stat +Abstr +Nom +Acc +Dat +Gen
++V +Phys +Mov +Spir +Life +Past +Pres +Fut +RemPast
++Perf +Imperf +Habit
+
+! Lexicon containing lexical stems:
+LEXICON Root
+ mwapo N ;
+ buri N ;
+ vuuv N ;
+ qquu N ;
+ ttifo N ;
+ san N ;
+ linel N ;
+ dih N ;
+ hewi N ;
+ puuluuv N ;
+ atto V;
+ gol V;
+ sum V;
+ appa V;
+ qolush V;
+ loq V;
+ potu V;
+ liq V;
+ fi'iqo V;
+ imuru V;
+
+! Lexicon containing POS tag only:
+LEXICON N
++N: N-class ;
+
+! Lexicon containing noun class suffixes and corresponding tags:
+LEXICON N-class
++Liv:u  N-case ;
++Stat:  N-case ;
++Abstr:a N-case ;
+
+! Lexicon containing noun case suffixes and corresponding tags:
+LEXICON N-case
++Nom:  #  ;
++Acc:ti  # ;
++Dat:tla # ;
++Gen:qo  # ;
+
+! Lexicon containing POS tag only:
+LEXICON V
++V: V-class ;
+
+! Lexicon containing verb class suffixes and corresponding tags:
+LEXICON V-class
++Phys:o  Tense ;
++Mov:i  Tense ;
++Spir:a Tense ;
++Life:u Tense ;
+
+! Lexicon containing tense suffixes and corresponding tags:
+LEXICON Tense
++Pres:  Aspect ;
++Past:si  Aspect ;
++RemPast:hi Aspect ;
++Fut:vi  Aspect ;
+
+! Lexicon containing aspect suffixes and corresponding tags:
+LEXICON Aspect
++Imperf: # ;
++Perf:d # ;
++Habit:b # ;
+
+! I listed 10 nouns, each of which can be put into one of 3 fluid classes
+! (they can have different classes depending on how they're being used) and
+! one of 4 cases (12 possible inflectional forms). 
+! The format for lookup is root+N+class+case.
+! Roots: mwapo, buri, vuuv, qquu, ttifo, san, linel, dih, hewi, puuluuv
+! Classes: +Liv (living), +Stat (static), +Abstr (abstract)
+! Cases: +Nom +Acc +Dat +Gen
+! Examples: mwapo+N+Liv+Acc = mwapouti
+!           qquu+N+Abstr+Gen = qquuaqo
+!           linel+N+Stat+Dat = lineltla
+! I also listed 10 verbs with 4 fluid classes, 4 tenses, and 3 aspects.
+! The format for lookup is root+V+class+tense+aspect.
+! Roots: atto, gol, sum, appa, qolush, loq, potu, liq, fi'iqo, imuru
+! Classes: +Phys (physical), +Mov (movement), +Spir (spiritual), +Life (life)
+! Tenses: +Pres, +Past, +Fut, +RemPast (remote/literary past)
+! Aspects: +Perf, +Imperf, +Habit (habitual)
